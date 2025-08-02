@@ -1,14 +1,91 @@
 Hello Git!
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Git Project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <style>
+        /* Basic CSS styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f2f5;
+            color: #333;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        header p {
+            font-size: 1.3em;
+            margin-top: 10px;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #4a90e2;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 8px;
+        }
+        #about {
+            font-size: 1.1em;
+            line-height: 1.6em;
+        }
+        #contact button {
+            background-color: #4a90e2;
+            border: none;
+            padding: 15px 25px;
+            color: white;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #contact button:hover {
+            background-color: #357ABD;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My First Git Project!</h1>
-    <p>This file is committed from my local PC to GitHub.</p>
+
+<header>
+    <h1>Jubayer Rahman</h1>
+    <p>Welcome to my personal website!</p>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi! I am Jubayer Rahman, a passionate learner and developer from Bangladesh. I love coding, exploring new technologies, and building projects that make a difference. This website is a simple portfolio to showcase who I am and what I do.
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <button onclick="showMessage()">Click to Say Hello!</button>
+    </section>
+</main>
+
+<script>
+    function showMessage() {
+        alert('Hello! Thank you for visiting my website.');
+    }
+</script>
+
 </body>
 </html>
-git add .
-git commit -m "Added basic HTML to index.html"
-git push
